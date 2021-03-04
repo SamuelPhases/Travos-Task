@@ -1,0 +1,20 @@
+.products {
+  /* background-color: darkorange; */
+  display: grid;
+  gap: 2em;
+  width: 90vw;
+  overflow: hidden;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* align-items: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center; */
+}
+
+@media (max-width: 500px) {
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    background-color: green;
+  }
+}

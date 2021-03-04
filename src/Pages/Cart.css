@@ -1,0 +1,96 @@
+.cartNav {
+  width: 100%;
+  /* background-color: blue; */
+  padding: 1.5em 0.5em;
+  box-shadow: -2px -2px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cartNav-container {
+  display: flex;
+  align-items: center;
+  width: var(--width);
+  /* background-color: #299; */
+  margin: auto;
+}
+
+.cartNav h4 {
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  padding: 0em 1em;
+}
+
+.cartNav > .cartNav-container > .home-link > img {
+  width: 10px;
+  object-fit: cover;
+}
+
+.home-link {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  /* background-color: brown; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #ccc;
+}
+
+.cartItems {
+  width: 100%;
+  /* overflow-x: hidden; */
+  /* background-color: deepskyblue; */
+}
+
+.cartCal {
+  /* background-color: gold; */
+  width: var(--width);
+  margin: auto;
+  padding: 1em 0em;
+}
+
+.cartList {
+  padding-bottom: 4em;
+  /* background-color: gold; */
+  /* overflow: scroll; */
+}
+
+.cartCal h4 {
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.cartCal > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.6em 0em;
+}
+
+.cartCal > div > h3 {
+  font-size: 0.9rem;
+}
+
+.cartCal > .fin-amount {
+  border-top: 1px solid #eee;
+}
+
+button {
+  width: var(--width);
+  display: block;
+  margin: auto;
+  padding: 0.8em;
+  margin-bottom: 2em;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}

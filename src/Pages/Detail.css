@@ -1,0 +1,300 @@
+.detail {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  /* background-color: indigo; */
+  padding-bottom: 0.4em;
+  position: relative;
+  overflow: hidden;
+}
+
+.show-sizeOverlayContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.size-compOverlay {
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: -20%;
+  bottom: 0%;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 3em;
+  justify-content: flex-start;
+  padding-top: 5em;
+  flex-direction: column;
+  animation: popUp 0.3s ease;
+}
+
+@keyframes popUp {
+  0% {
+    transform: translateY(5%) translateX(40%);
+  }
+  100% {
+    transform: translateY(0%) translateX(0%);
+  }
+}
+
+.size-compOverlay > .size-flex > div {
+  cursor: pointer;
+  margin-right: 0.3em;
+  /* background-color: blue; */
+  /* width: 2rem;
+  height: 2rem; */
+}
+.size-compOverlay > .size-flex {
+  display: flex;
+  align-items: center;
+}
+
+.size-compOverlay > h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1em;
+  padding-top: 0em;
+  padding-left: 2em;
+}
+
+.size-compOverlay > p {
+  font-weight: 300;
+  text-decoration: underline;
+  font-size: 0.8rem;
+  padding: 1em;
+  padding-left: 1.5em;
+}
+
+.detail > header {
+  padding-bottom: 2em;
+  background-color: #d1d4d8;
+  position: relative;
+  /* width: 90%; */
+  margin-bottom: 2em;
+}
+
+.detail .header-footer > div > img {
+  width: 100%;
+  object-fit: cover;
+  /* background-color: orangered; */
+  /* margin-right: 1em; */
+}
+.detail .header-footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: -10%;
+  width: var(--width);
+  /* background-color: aquamarine; */
+  margin: auto;
+  left: 5%;
+  /* display: block; */
+}
+
+.detail > header > .slider-btns {
+  display: flex;
+  align-items: center;
+  width: var(--width);
+  /* background-color: orchid; */
+  margin: auto;
+}
+.detail > header > .slider-btns > .slide-btn {
+  transition: all 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.detail > header > .slider-btns > .slide-btn > .MuiSvgIcon-root {
+  font-size: 1rem;
+}
+.detail > header > .slider-btns > .slide-btn {
+  color: #fff;
+  cursor: pointer;
+  margin-right: 0.2em;
+}
+
+.detail > header > .header-text {
+  /* background-color: orange; */
+  width: var(--width);
+  /* background-color: orchid; */
+  margin: 0.5em auto;
+}
+
+.detail > header > .header-text > h2 {
+  font-size: 1.3rem;
+}
+
+.detail > header > .header-text > .header-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detail > header > .header-text > .header-info > .info-A > p {
+  font-size: 0.9rem;
+  margin-left: 0.5em;
+  font-weight: 300;
+}
+.detail > header > .header-text > .header-info > .info-A > h4 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.detail > header > .header-text > .header-info > .info-A {
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+/* .detail > header > .header-text { */
+.detail > .product-abt {
+  /* background-color: lightseagreen; */
+  width: var(--width);
+  margin: auto;
+}
+
+.detail > .product-abt > h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.detail > .product-abt > p > span {
+  color: #ff0000;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.detail > .product-abt > p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.detail > .spec {
+  /* background-color: maroon; */
+}
+
+.detail > .spec {
+  width: var(--width);
+  margin: 1em auto;
+}
+
+.detail > .spec > h5 {
+  background-color: #d6d6d6;
+  width: fit-content;
+  padding: 0.5em 0.8em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.detail > .spec > .spec-list {
+  /* background-color: indianred; */
+  padding: 0.8em 0em;
+}
+
+.detail > .spec > .spec-list > .spec-listPoint > .MuiSvgIcon-root {
+  font-size: 1rem;
+}
+.detail > .spec > .spec-list > .spec-listPoint > p {
+  font-size: 0.9rem;
+  margin-left: 0.6em;
+  font-weight: 400;
+}
+
+.detail > .spec > .spec-list > .spec-listPoint {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0em;
+  /* background-color: deeppink; */
+  /* margin-bottom: 1em; */
+}
+
+.detail > button {
+  background-color: #000;
+  width: var(--width);
+  font-weight: 400;
+  display: block;
+  margin: auto;
+  padding: 0.6em 1em;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: capitalize;
+  outline: none;
+  margin-bottom: 4em;
+}
+
+.detail > header > .header-img > img {
+  width: 80%;
+  transform: scale(1.5) translateX(-30%);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.detail > header > .header-img.showSecond > img {
+  transform: scale(1.5) translateX(30%);
+}
+
+.detail > header > .header-img {
+  height: 200px;
+  /* background-color: chocolate; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .detail > header > .header-img > img {
+    width: 80%;
+    transform: scale(1.3) translateX(-30%);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .detail > header > .header-img.showSecond > img {
+    transform: scale(1.3) translateX(35%);
+  }
+
+  .detail > header > .header-img {
+    height: 370px;
+    /* background-color: midnightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .detail .header-footer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: -6%;
+    width: var(--width);
+    margin: auto;
+    left: 5%;
+    /* background-color: cornflowerblue; */
+  }
+
+  .size-compOverlay {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -2%;
+    bottom: 5%;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 3em;
+    justify-content: flex-start;
+    padding-top: 5em;
+    flex-direction: column;
+    animation: popUp 0.3s ease;
+  }
+}
